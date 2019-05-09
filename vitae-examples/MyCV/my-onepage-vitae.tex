@@ -1,0 +1,112 @@
+\documentclass[10pt]{article}
+\usepackage{charter}
+\usepackage{fullpage}
+\usepackage[colorlinks=false]{hyperref}
+\usepackage{currvita}
+
+% Better for lists with 1-2 items and short descriptions
+\newenvironment{sublist}{%
+	\begin{list}{}{%
+		\setlength{\itemsep}{0em}\setlength{\parsep}{0em}%
+		\setlength{\topsep}{0em}\setlength{\parskip}{0em}%
+	}%
+}%
+{ \end{list} }
+
+% Better for lists with more than 2 items and/or long descriptions
+\newenvironment{subbulletlist}{%
+	\begin{list}{\labelitemii}{%
+		\setlength{\topsep}{\itemsep}\setlength{\parskip}{\parsep}%
+	}%
+}%
+{ \end{list} }
+
+\pagestyle{empty}
+
+\begin{document}
+
+\newlength{\oldcvlabelwidth}
+\newlength{\oldcvlabelsep}
+
+\begin{cv}{{\large Kan Ouivirach}\\
+{\normalsize Asian Institute of Technology, Computer Science and Information Management\\
+Email: {\mdseries \href{mailto:kan@ieee.org}
+	{kan@ieee.org}} 
+\hfill Phone: {\mdseries +6689-483-6835} \hfill 
+Web: {\mdseries \href{http://www.kanouivirach.com/}
+	{www.kanouivirach.com}}}
+}
+
+\setlength{\oldcvlabelwidth}{\cvlabelwidth}
+\setlength{\oldcvlabelsep}{\cvlabelsep}
+
+\setlength{\cvlabelwidth}{1em}
+
+\begin{cvlist}{Education}
+	\item \emph{Ph.D., Computer Science}, expected May 2011\\
+	Asian Institute of Technology, GPA: 3.92/4.00
+	\begin{subbulletlist}
+		\item \emph{Royal Thai Government Fellowship} 
+%		(16.2\% acceptance rate)
+%		\item \emph{ASEE National Defense Science and 
+%		Engineering Graduate Fellowship} (21.3\% acceptance rate)
+%		\item Awarded 3 NSF student travel grants
+	\end{subbulletlist}
+	
+	\item \emph{M.Eng., Computer Science}, May 2008\\ 
+	Asian Institute of Technology, GPA: 3.56/4.00
+	\begin{subbulletlist}
+		\item \emph{Royal Thai Government Fellowship} 
+		\item Second place award, AIT Master Thesis competition in 2008
+	\end{subbulletlist}
+	
+	\item \emph{B.Eng., Computer Engineering}, May 2005\\
+	Kasetsart University, GPA: 2.90/4.00
+\end{cvlist}
+
+\setlength{\cvlabelwidth}{0em}
+\setlength{\cvlabelsep}{\labelsep}
+\begin{cvlist}{Publications}
+	\item \textbf{Conference Papers}
+%  \nociterefpaper{kan10clustering}
+  \bibliography{references}
+\end{cvlist}
+
+\begin{cvlist}{Technical Experience}
+\item
+\begin{itemize}\itemsep=0.25em
+	\item Graduate research focus was wireless networking, specifically
+	energy efficient protocols and security.
+	\item Graduate work included extensive network simulation
+	(\emph{ns-2}, which uses C++ and OTcl), 
+	a sensor hardware implementation (TinyOS/NesC),
+	a user-level ad hoc routing implementation, Perl scripts for
+	data parsing and graphing as well as simple simulators, and LaTeX
+	for reports and documentation.
+	\item Several semester group projects for graduate coursework,
+	including a Java-based tool for younger students to create graphical
+	life stories and a custom built Bluetooth simulator written in C.
+	\item Graduate coursework included assignments in
+	other domains, such as Unix sockets, ML, Prolog, Lisp.
+	\item Undergraduate research included developing a Java-based
+	visualization tool for a scientific computing problem solving
+	environment to control message passing between modules and array
+	partitioning.
+	\item Nine-month electrical engineering co-op at Michelin in 1998.
+\end{itemize}
+\end{cvlist}
+
+\begin{cvlist}{Extracurricular}
+\item
+\begin{itemize}\itemsep=0.25em
+	\item Member of IEEE since 2009
+%	\item 2004-05 Large Group Coordinator for UIUC Graduate InterVarsity Christian Fellowship
+\end{itemize}
+\end{cvlist}
+
+\setlength{\cvlabelwidth}{\oldcvlabelwidth}
+\setlength{\cvlabelsep}{\oldcvlabelsep}
+
+\end{cv}
+\end{document}
+

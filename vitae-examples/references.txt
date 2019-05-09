@@ -1,0 +1,4 @@
+http://www.matthewjmiller.net/howtos/create-a-curriculum-vitae-using-latex/
+http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+
+http://math.northwestern.edu/comp-help/template/nuvita.html

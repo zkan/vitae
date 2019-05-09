@@ -1,0 +1,121 @@
+\documentclass[10pt]{article}
+\usepackage{charter}
+\usepackage{fullpage}
+\usepackage[colorlinks=false]{hyperref}
+\usepackage{currvita}
+
+% Better for lists with 1-2 items and short descriptions
+\newenvironment{sublist}{%
+	\begin{list}{}{%
+		\setlength{\itemsep}{0em}\setlength{\parsep}{0em}%
+		\setlength{\topsep}{0em}\setlength{\parskip}{0em}%
+	}%
+}%
+{ \end{list} }
+
+% Better for lists with more than 2 items and/or long descriptions
+\newenvironment{subbulletlist}{%
+	\begin{list}{\labelitemii}{%
+		\setlength{\topsep}{\itemsep}\setlength{\parskip}{\parsep}%
+	}%
+}%
+{ \end{list} }
+
+\pagestyle{empty}
+
+\begin{document}
+
+\newlength{\oldcvlabelwidth}
+\newlength{\oldcvlabelsep}
+
+\begin{cv}{{\large Matthew J. Miller}\\
+{\normalsize University of Illinois at Urbana-Champaign, 
+Department of Computer Science\\
+Email: {\mdseries \href{mailto:matt@matthewjmiller.net}
+	{matt@matthewjmiller.net}} 
+\hfill Phone: {\mdseries 217-244-6024} \hfill 
+Web: {\mdseries \href{http://www.matthewjmiller.net/}
+	{www.matthewjmiller.net}}}
+}
+
+\setlength{\oldcvlabelwidth}{\cvlabelwidth}
+\setlength{\oldcvlabelsep}{\cvlabelsep}
+
+\setlength{\cvlabelwidth}{1em}
+
+\begin{cvlist}{Education}
+	\item \emph{Ph.D., Computer Science}, expected Fall 2006\\
+	University of Illinois at Urbana-Champaign, GPA: 3.94/4.0
+	\begin{subbulletlist}
+		\item \emph{National Science Foundation Fellowship} 
+		(16.2\% acceptance rate)
+		\item \emph{ASEE National Defense Science and 
+		Engineering Graduate Fellowship} (21.3\% acceptance rate)
+		\item Awarded 3 NSF student travel grants
+	\end{subbulletlist}
+	\item \emph{M.S., Computer Science}, December 2003\\ 
+	University of Illinois at Urbana-Champaign, GPA: 3.94/4.0
+	\item \emph{B.S., Computer Engineering}, May 2001\\
+	Clemson University, GPA: 4.0/4.0
+\end{cvlist}
+
+\setlength{\cvlabelwidth}{0em}
+\setlength{\cvlabelsep}{\labelsep}
+\begin{cvlist}{Publications}
+\item
+	\begin{itemize}\itemsep=0.25em
+	\item First author of 7 peer-reviewed conference and journal
+	papers, including outlets such as \textit{IEEE Transactions on
+	Mobile Computing}, \textit{IEEE Infocom} (18\% acceptance rate),
+	and \textit{IEEE International Conference on Distributed Computing
+	Systems (ICDCS)} (13.8\% acceptance rate).  All publications and
+	presentations are available at
+	\href{http://www.crhc.uiuc.edu/~mjmille2/publications/}
+	{www.crhc.uiuc.edu/$\sim$mjmille2/publications/}.
+	\item External reviewer for several conferences and \textit{IEEE
+	Transactions} journals.
+	\item Author of several online HOWTO articles, including a
+	Linux/Windows dual boot guide that averages over 200 unique page
+	views per day.
+	\end{itemize}
+\end{cvlist}
+
+\begin{cvlist}{Technical Experience}
+\item
+\begin{itemize}\itemsep=0.25em
+	\item Graduate research focus was wireless networking, specifically
+	energy efficient protocols and security.
+	\item Graduate work included extensive network simulation
+	(\emph{ns-2}, which uses C++ and OTcl), 
+	a sensor hardware implementation (TinyOS/NesC),
+	a user-level ad hoc routing implementation, Perl scripts for
+	data parsing and graphing as well as simple simulators, and LaTeX
+	for reports and documentation.
+	\item Several semester group projects for graduate coursework,
+	including a Java-based tool for younger students to create graphical
+	life stories and a custom built Bluetooth simulator written in C.
+	\item Graduate coursework included assignments in
+	other domains, such as Unix sockets, ML, Prolog, Lisp.
+	\item Undergraduate research included developing a Java-based
+	visualization tool for a scientific computing problem solving
+	environment to control message passing between modules and array
+	partitioning.
+	\item Nine-month electrical engineering co-op at Michelin in 1998.
+\end{itemize}
+\end{cvlist}
+
+\begin{cvlist}{Extracurricular}
+\item
+\begin{itemize}\itemsep=0.25em
+	\item Member of IEEE since 1997
+	\item 2004-05 Large Group Coordinator for UIUC Graduate
+	InterVarsity Christian Fellowship
+\end{itemize}
+\end{cvlist}
+
+\setlength{\cvlabelwidth}{\oldcvlabelwidth}
+\setlength{\cvlabelsep}{\oldcvlabelsep}
+
+\end{cv}
+\end{document}
+
