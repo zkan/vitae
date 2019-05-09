@@ -1,0 +1,249 @@
+% Curriculum Vitae in LaTeX
+% Special Thanks for the template: Matthew N. Dailey and Waheed Iqbal
+
+\documentclass[11pt]{article}
+\usepackage{a4,url}
+\usepackage{textpos}
+\usepackage{graphicx}
+\textwidth 6.5in
+\textheight 9.7in
+\topmargin -0.6in
+\oddsidemargin -0.1in
+
+\newcommand{\mysection}[2]{
+  \noindent
+  \begin{tabular}{@{}ll@{}}
+    \parbox[t]{1.0in}{ \raggedright \bf #1 } &
+    \parbox[t]{5.0in}{ #2 }\\
+    \hspace{0.2in}
+  \end{tabular}
+}
+\newcommand{\mybr}[0]{\\ \hspace{0.2in} \\}
+
+\begin{document}
+ 
+\pagestyle{empty}
+\thispagestyle{empty}
+
+\begin{center}
+  {\LARGE \bf \noindent Kan Ouivirach}
+\end{center}
+
+\vspace{0.1in}
+\TPMargin{4pt}
+\setlength{\TPHorizModule}{10pt}
+\setlength{\TPVertModule}{10pt}
+%\begin{textblock}{1}(38.5,-9)
+%\includegraphics[scale=0.6]{kan.jpg}
+%\end{textblock}
+
+%\noindent
+%Computer Science and Information Management
+%\hfill Asian Institute of Technology\\
+%{\tt kan@ieee.org} \hfill P.O. Box 4, Klong Luang\\
+%\url{http://www.kanouivirach.com} \hfill Pathumthani 12120 Thailand\\
+%Mobile: +66 83 749 5568 %\hfill Fax: +66 2 524 5721
+
+\noindent
+Email: {\tt zkan.cs@gmail.com} \hfill 7/86 Moo 2, Tiwanon Rd., Pakkret\\
+Website: \url{http://www.kanouivirach.com} \hfill Nonthaburi 11120 Thailand\\
+Mobile: +66 83 749 5568
+
+\noindent \hrulefill
+
+\vspace{0.2in}
+
+%\mysection{Current Position}{Ph.D candidate, Computer Science and 
+%    Information Management, Asian Institute of Technology, Thailand.}
+
+\mysection{Career Objective} {
+  To obtain a position as a team-player in
+  an Agile environment in a well-established and fast-growing company
+  where I can be an efficient and productive employee.  I am also
+  seeking a new challenge to expand my knowledge and skills in
+  marketing.
+}
+
+\mysection{Education} {
+  {\bf Ph.D.}, Computer Science (2013), Asian Institute of
+  Technology, Thailand. Royal Thai Government Fellowship.  GPA:~3.92.\\
+
+  {\bf M.Eng.}, Computer Science specialized in Software Engineering
+  (2008), Asian Institute of Technology, Thailand.  Hisamatsu Prize for
+  Master's Degree. Second Place Award in AIT Master Thesis
+  Competition. Royal Thai Government Fellowship. GPA:~3.56.\\
+
+  {\bf B.Eng.}, Computer Engineering (2005), Kasetsart University,
+  Thailand. GPA:~2.90.
+}
+
+\mysection{Professional Experience}{ 
+  {\bf Graduate Teaching Assistant} \hfill August 2012--December 2012\\
+  Web Application Engineering class (Ruby on Rails), Asian Institute of
+  Technology.\\
+  Taught lab, supervised students, and graded work.\\
+
+  {\bf Part-time Lecturer} \hfill June 2011--April 2012\\ 
+  Computer and Information Technology class, School of Science and
+  Technology, Bangkok University, Thailand.\\
+  Taught class and prepared lectures.\\
+
+  {\bf Graduate Teaching Assistant} \hfill August 2009--December 2009\\
+  Web Application Engineering class (Ruby on Rails), Asian Institute of
+  Technology.\\
+  Supervised students, and graded work.
+}
+
+\mysection{Professional Projects}{
+
+  {\bf Dental Care: Orthodontic Predictor} \hfill December 2012--February 2013\\
+  Developed a machine learning algorithm in C/C++ for predicting whether
+  a dental patient will need orthodontic treatment or not based on historical
+  records.\\
+
+  {\bf System for Predicting and Preventing Work-Related Musculoskeletal 
+  Disorders among Dentists} \hfill May 2011--August 2011\\
+  Developed machine learning algorithms in C/C++ for predicting and
+  preventing work-related musculoskeletal disorders among dentist. The
+  work has been published in Computer Methods in Biomechanics and
+  Biomedical Engineering. (Available at
+  \url{http://www.tandfonline.com/doi/abs/10.1080/10255842.2012.672565})
+
+}
+
+\mysection{Professional Projects (cont.)}{
+
+  {\bf A Virtual Reality Simulatorfor Teaching and Evaluating Dental
+  Procedures} \hfill May 2011--June 2011\\ 
+  Developed a machine learning algorithm in C/C++ for a dental training 
+  system that evaluates the performance of dental students or experts.
+  The work has been published in Methods of Information in Medicine. 
+  (Available at
+  \url{http://iist.unu.edu/sites/iist.unu.edu/files/biblio/Rhienmora-VRSim.pdf})\\
+
+  {\bf Scantron} \hfill January 2011--March 2011 \\
+  Worked in a team to develop computer vision algorithms in C/C++ 
+  using OpenCV for an answer sheet checking and scoring for each 
+  answer sheet by using a scanned image of an answer sheet.\\
+
+  {\bf Rojpaiboon.co.th} \hfill June 2009--June 2010\\
+  Developed a Web-based application in PHP for Rojpaiboon Equipment 
+  Co., Ltd.\\
+
+  {\bf P2P Web Caching for One Laptop Per Child (OLPC)} \hfill 
+  January 2007--March 2007\\
+  Worked in a team to develop a small P2P Web caching program in 
+  Python for an OLPC laptop to make Websites as fast to access 
+  as possible for children, especially in rural areas.
+  Note that this was a group project in the AIT Software Architecture 
+  Design class in 2007.\\
+
+  {\bf Document Approval System} \hfill August 2006--December 2006\\
+  Worked in a team to develop a document approval system in PHP 
+  with Smarty (a template engine) for the IT department at Haad Thip 
+  Public Co., Ltd. Note that this was a group project in the AIT Web 
+  Application Engineering class in 2006.
+
+}
+
+\mysection{Professional Activities}{
+  Prepared the handouts on time series for a professional development 
+  workshop on ``Machine Learning in Computer Vision'' with practical 
+  sessions using Matlab/Octave and OpenCV, 2013. This workshop was 
+  organized by TEKBAC (M) Sdn Bhd and TEKBAC Singapore Pte Ltd.\\
+
+  BugDay team member to organize BugDay Bangkok, 2013.\\
+
+  Speaker to share experience in ``\textit{Adapting Scrum to Managing a
+  Research Group},'' Barcamp Bangkhen, 2010.\\
+
+  Attended Machine Learning Summer School (MLSS), 2008.\\
+  Web site: \url{http://kioloa08.mlss.cc/}\\
+
+  Writer at WordPress-66.com and ThaiML.org.\\
+
+  Reviewer for \textit{International Conference on Electrical 
+  Engineering/Electronics, Computer, Telecommunications and Information 
+  Technology} (ECTI-CON), \textit{International Symposium on Intelligent 
+  Signal Processing and Communication Systems} (ISPACS), \textit{Thailand-Japan 
+  International Academic Conference} (TJIA), \textit{Frontiers of 
+  Information Technology} (FIT).\\
+
+  Student Member of IEEE since 2009.
+}
+
+\newpage
+
+\mysection{Research Interests} {
+  Data analysis and visualization,
+  machine learning, data mining, computer vision, and image
+  processing.
+}
+
+\mysection{Technology Interests} { 
+  WordPress, Cloud-based technology, MVC Web frameworks, 
+  Apache, OpenCV, ROS, Ajax, Android, iOS.
+}
+
+\mysection{Technical Expertise} {
+  \textbf{Programing Languages}: C/C++, Matlab/Octave/R, PHP, Perl,
+  Python, Ruby on Rails, Java, SQL, JavaScript.\\
+  \textbf{Version Control Systems:} Git, Subversion.\\
+  \textbf{Database Management Systems}: MySQL, PostgreSQL.\\
+  \textbf{Operating Systems}: Ubuntu, Windows XP/Vista/7.
+}
+
+\mysection{Statement of Accomplishments} {
+  Udacity: Web Application Engineering: How to Build a Blog (in Python), 2012.\\
+  Coursera: Learn to Program (in Python): The Fundamentals, 2012.\\
+  Machine Learning course (\url{ml-class.org}), 2011.\\
+  Artificial Intelligence course (\url{ai-class.com}), 2011.
+}
+
+\mysection{Selected Publications} {
+  Ouivirach, K.\ and Dailey, M.\ N., Extracting the Object from the
+  Shadows: Maximum Likelihood Object/Shadow Discrimination. In
+  Proceedings of \textit{International Conference on Electrical
+  Engineering/Electronics Computer Telecommunications and Information
+  Technology (ECTI-CON)}, 2013. In press.\\
+
+  Ouivirach, K., Gharti, S., and Dailey, M.\ N., Incremental Behavior
+  Modeling and Suspicious Activity Detection. \textit{Pattern
+  Recognition (PR)}, 46(3): 671--680, 2013.\\
+
+  Ouivirach, K., Gharti, S., and Dailey, M.\ N., Automatic Suspicious
+  Behavior Detection from a Small Bootstrap Set. In
+  \textit{International Conference on Computer Vision Theory and 
+  Applications (VISAPP)}, volume 1, pp.\ 655--658, 2012.\\
+
+  Ouivirach, K.\ and Dailey, M.\ N., Clustering Human Behaviors with 
+  Dynamic Time Warping and Hidden Markov Models for a Video Surveillance 
+  System. In Proceedings of \textit{International Conference on 
+  Electrical Engineering/Electronics Computer Telecommunications and 
+  Information Technology (ECTI-CON)}, pp.\ 884--888, 2010.
+}
+
+%\mysection{More about Me and My Work} {
+%  \textbf{Email:} \texttt{zkan.cs@gmail.com} (available for gtalk) \\
+%  \textbf{Github:} \url{https://github.com/zkan} \\
+%  \textbf{Bitbucket:} \url{https://bitbucket.org/zkan} \\
+%  \textbf{Blog:} \url{http://www.kanouivirach.com/weblog/}\\
+%  \textbf{LinkedIn:} \url{http://www.linkedin.com/in/kanouivirach}\\
+%  \textbf{Twitter:} \url{https://twitter.com/#!/zKanCS} \\
+%  \textbf{Facebook:} \url{https://www.facebook.com/zkan.cs}
+%}
+
+\mysection{References}{
+  Matthew N.\ Dailey, Ph.D.\\ 
+  Associate Professor\\
+  Computer Science and Information Management\\
+  School of Engineering and Technology\\
+  Asian Institute of Technology\\
+  P.O. Box 4, Klong Luang\\
+  Pathumthani 12120 Thailand\\
+  +66 2 524 5712\\
+  Email: {\tt mdailey@ait.ac.th}\\
+}
+
+\end{document}
+
